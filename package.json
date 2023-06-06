@@ -2,11 +2,10 @@
   "dependencies": {
     "@ckeditor/ckeditor5-basic-styles": "^38.0.1",
     "@ckeditor/ckeditor5-core": "^38.0.1",
-    "@ckeditor/ckeditor5-dev-utils": "^37.0.1",
+    "@ckeditor/ckeditor5-dev-utils": "^38.0.0",
     "@ckeditor/ckeditor5-editor-classic": "^38.0.1",
     "@ckeditor/ckeditor5-essentials": "^38.0.1",
     "@ckeditor/ckeditor5-heading": "^38.0.1",
-    "@ckeditor/ckeditor5-inspector": "^4.1.0",
     "@ckeditor/ckeditor5-list": "^38.0.1",
     "@ckeditor/ckeditor5-paragraph": "^38.0.1",
     "@ckeditor/ckeditor5-theme-lark": "^38.0.1",
@@ -17,10 +16,13 @@
     "postcss-loader": "^4.3.0",
     "raw-loader": "^4.0.2",
     "style-loader": "^2.0.0",
-    "webpack": "^5.84.1",
+    "webpack": "^5.85.1",
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
     "build": "webpack"
+  },
+  "devDependencies": {
+    "@ckeditor/ckeditor5-inspector": "^4.1.0"
   }
 }

@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" href="./dist/externaldatawidget.css">
+  <link rel="stylesheet" href="./dist/externaldatawidget.css" />
+  <link rel="stylesheet" href="./dist/placeholder.css" />
 </head>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>CKEditor 5 Framework – Implementing a simple widget</title>
-    </head>
-    <body>
-        <div id="editor">
-            <p>Editor content goes here.</p>
-        </div>
-
-        <script src="dist/bundle.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>CKEditor 5 Framework – Implementing a simple widget</title>
+  </head>
+  <body>
+    <div id="editor">
+      <p>Editor content goes here.</p>
+    </div>
+    <button class="btn">click</button>
+    <script src="dist/bundle.js"></script>
+    <script>
+      let button = document.querySelector(".btn");
+      button.addEventListener("click", () => {
+        editor.execute( 'placeholder', { value: 'time' } );
+      });
+    </script>
+  </body>
 </html>
